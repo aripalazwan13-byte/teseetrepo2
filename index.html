@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Undangan pernikahan Tyo & Pani.">
+  <title>Undangan Pernikahan | Tyo & Pani</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Background -->
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient-star star-one">✦</span>
+    <span class="ambient-star star-two">✧</span>
+    <span class="ambient-star star-three">✦</span>
+  </div>
+
+  <!-- HALAMAN 1: COVER -->
+  <main id="cover" class="cover-screen">
+    <div class="cover-glow" aria-hidden="true"></div>
+    
+    <!-- Layer Animasi Bunga Sakura Cover -->
+    <div id="coverSakuraTop" class="cover-sakura-layer" aria-hidden="true"></div>
+    <div id="coverSakuraBottom" class="cover-sakura-layer-bottom" aria-hidden="true"></div>
+
+    <div class="cover-frame">
+      <div class="corner corner-tl" aria-hidden="true">❀</div>
+      <div class="corner corner-tr" aria-hidden="true">❀</div>
+      <div class="corner corner-bl" aria-hidden="true">❀</div>
+      <div class="corner corner-br" aria-hidden="true">❀</div>
+
+      <p class="eyebrow cover-eyebrow">THE WEDDING OF</p>
+      
+      <!-- FOTO UTAMA PADA COVER (Menggunakan .jpeg) -->
+      <div class="cover-photo-wrap">
+        <img class="cover-photo" src="assets/images/cover-foto.jpeg" alt="Foto Tyo dan Pani">
+        <span class="photo-sparkle sparkle-a" aria-hidden="true">✿</span>
+        <span class="photo-sparkle sparkle-b" aria-hidden="true">✧</span>
+      </div>
+      
+      <h1 class="couple-name cover-names"><span data-groom>Tyo</span><i>&</i><span data-bride>Pani</span></h1>
+      <p class="cover-date" data-date-label>Minggu, 15 November 2026</p>
+      <p class="guest-label">Kepada Yth.</p>
+      <p class="guest-name" id="guestName">Bapak/Ibu/Saudara/i</p>
+      <p class="cover-note">Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir di hari istimewa kami.</p>
+      
+      <button class="primary-button" id="openInvitation" type="button">
+        <span aria-hidden="true">✿</span> Buka Undangan <span aria-hidden="true">✿</span>
+      </button>
+      <p class="tap-hint">Ketuk untuk membuka undangan</p>
+    </div>
+  </main>
+
+  <!-- HALAMAN 2: ISI UNDANGAN -->
+  <div id="invitation" class="invitation hidden" aria-hidden="true">
+    <!-- Layer untuk bunga sakura saat scroll -->
+    <div id="scrollSakuraLayer" class="scroll-sakura-layer" aria-hidden="true"></div>
+
+    <header class="mini-header">
+      <span class="mini-mark">❀</span>
+      <span data-groom>Tyo</span><span class="mini-amp">&</span><span data-bride>Pani</span>
+      <button id="musicToggle" class="music-button" type="button" aria-label="Putar musik" title="Putar atau jeda musik">
+        <span id="musicIcon" aria-hidden="true">♫</span><span id="musicText">Musik</span>
+      </button>
+    </header>
+
+    <section class="hero-section section reveal">
+      <div class="section-flower flower-left" aria-hidden="true">❀</div>
+      <p class="eyebrow">ASSALAMUALAIKUM WARAHMATULLAHI WABARAKATUH</p>
+      <div class="ornament-line"><span>✿</span></div>
+      <p class="intro-quote">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup agar kamu merasa tenteram di sisinya.”</p>
+      <p class="quote-source">— Ar-Rum: 21</p>
+      <h2>Dengan memohon rahmat dan ridha Allah SWT</h2>
+      <p class="body-copy">Kami bermaksud menyelenggarakan pernikahan putra-putri kami. Merupakan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+      <div class="section-flower flower-right" aria-hidden="true">❀</div>
+    </section>
+
+    <section class="couple-section section reveal">
+      <p class="eyebrow">DUA HATI, SATU TUJUAN</p>
+      <h2>Mempelai</h2>
+      <div class="couple-grid">
+        <article class="person-card reveal">
+          <div class="portrait-frame">
+            <!-- FOTO MEMPELAI PRIA (.jpeg) -->
+            <img src="assets/images/groom.png" alt="Foto Mempelai Pria" loading="lazy">
+          </div>
+          <h3 data-groom>Tyo Faiz Asidiqi</h3>
+          <p class="person-role">Mempelai Pria</p>
+          <p class="person-detail">Putra dari Bapak Irwanto<br>dan Ibu Sri Andriani</p>
+        </article>
+        <div class="couple-amp" aria-hidden="true">&</div>
+        <article class="person-card reveal">
+          <div class="portrait-frame">
+            <!-- FOTO MEMPELAI WANITA (.jpeg) -->
+            <img src="assets/images/bride.png" alt="Foto Mempelai Wanita" loading="lazy">
+          </div>
+          <h3 data-bride>Pani Putri Ardina Br Purba</h3>
+          <p class="person-role">Mempelai Wanita</p>
+          <p class="person-detail">Putri dari Bapak Adilta Purba<br>dan Ibu Lidia Wati</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section section reveal">
+      <p class="eyebrow">CERITA KAMI</p>
+      <h2>Perjalanan Menuju Selamanya</h2>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot">✿</span>
+          <p class="timeline-date">Pertemuan</p>
+          <h3>Awal Sebuah Cerita</h3>
+          <p>Setiap kisah indah memiliki awalnya sendiri. Di sinilah cerita kami mulai ditulis.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot">✿</span>
+          <p class="timeline-date">Komitmen</p>
+          <h3>Memilih untuk Bersama</h3>
+          <p>Hari demi hari mengajarkan kami arti saling memahami, tumbuh bersama, dan menjaga kepercayaan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section reveal">
+      <p class="eyebrow">MENUJU HARI BAHAGIA</p>
+      <h2>Menghitung Hari</h2>
+      <div class="countdown" id="countdown" aria-label="Hitung mundur menuju pernikahan">
+        <div class="count-unit"><strong id="days">00</strong><span>Hari</span></div>
+        <div class="count-unit"><strong id="hours">00</strong><span>Jam</span></div>
+        <div class="count-unit"><strong id="minutes">00</strong><span>Menit</span></div>
+        <div class="count-unit"><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+      <p class="countdown-message" id="countdownMessage">Kami menantikan kehadiran dan doa restu Anda.</p>
+    </section>
+
+    <section class="event-section section reveal">
+      <p class="eyebrow">CATAT TANGGALNYA</p>
+      <h2>Rangkaian Acara</h2>
+      <div class="event-card reveal">
+        <div class="event-icon" aria-hidden="true">❀</div>
+        <h3>Akad Nikah</h3>
+        <p class="event-date" data-date-label>Rabu, 28 Oktober 2026</p>
+        <p class="event-time">10.00 WIB – Selesai</p>
+        <p class="event-place">Dusun Beringin<br>Desa Tanjung Putus, Kecamatan Padang Tualang</p>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-icon" aria-hidden="true">✿</div>
+        <h3>Resepsi</h3>
+        <p class="event-date" data-date-label>Minggu, 15 November 2026</p>
+        <p class="event-time">10.00 WIB – Selesai</p>
+        <p class="event-place">Dusun Beringin<br>Desa Tanjung Putus</p>
+      </div>
+      <a class="outline-button" id="mapsLink" href="#" target="_blank" rel="noopener noreferrer">⌖ Lihat Lokasi</a>
+      <button class="outline-button" id="calendarButton" type="button">＋ Simpan Tanggal</button>
+    </section>
+
+    <section class="gallery-section section reveal">
+      <p class="eyebrow">MOMEN KAMI</p>
+      <h2>Galeri Bahagia</h2>
+      <p class="body-copy">Beberapa momen kecil yang menjadi bagian dari cerita besar kami.</p>
+      <div class="gallery-grid">
+        <!-- FOTO GALERI (.jpeg) - Sesuaikan nama jika berbeda -->
+        <img src="assets/images/gallery-1.jpeg" alt="Galeri foto 1" loading="lazy" class="reveal">
+        <img src="assets/images/gallery-2.jpeg" alt="Galeri foto 2" loading="lazy" class="reveal">
+        <img src="assets/images/gallery-3.jpeg" alt="Galeri foto 3" loading="lazy" class="reveal">
+      </div>
+    </section>
+
+    <section class="rsvp-section section reveal">
+      <p class="eyebrow">DOA DAN HARAPAN</p>
+      <h2>Ucapan untuk Kami</h2>
+      <p class="body-copy">Kehadiran dan doa restu Anda adalah hadiah yang sangat berarti bagi kami.</p>
+      <form id="rsvpForm" class="rsvp-form">
+        <label for="senderName">Nama</label>
+        <input id="senderName" name="senderName" type="text" placeholder="Tulis nama Anda" maxlength="80" required>
+        <label for="attendance">Konfirmasi kehadiran</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Pilih jawaban</option>
+          <option value="Hadir">Insyaallah hadir</option>
+          <option value="Tidak dapat hadir">Mohon maaf, belum bisa hadir</option>
+        </select>
+        <label for="message">Ucapan dan doa</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tuliskan ucapan terbaik..." maxlength="500" required></textarea>
+        <button class="primary-button form-submit" type="submit">Tampilkan Ucapan</button>
+      </form>
+      <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
+      <div id="wishList" class="wish-list"></div>
+    </section>
+
+    <section class="closing-section section reveal">
+      <div class="closing-stars" aria-hidden="true">✿　✧　✿</div>
+      <p class="eyebrow">TERIMA KASIH</p>
+      <h2>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</h2>
+      <p class="closing-prayer">Atas kehadiran serta doa restunya, kami ucapkan terima kasih.</p>
+      <p class="closing-sign">Dengan penuh cinta,</p>
+      <h3 class="couple-name"><span data-groom>Tyo</span> <i>&</i> <span data-bride>Pani</span></h3>
+      <div class="closing-flower" aria-hidden="true">❀</div>
+    </section>
+
+    <footer class="footer">
+      <p>Undangan Pernikahan Digital</p>
+      <p class="footer-small">Dibuat dengan cinta ✿</p>
+    </footer>
+  </div>
+
+  <!-- Ganti src dengan nama file MP3 Anda nanti -->
+  <audio id="weddingMusic" src="assets/audio/sampai-jadi-debu.mp3" preload="none" loop></audio>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
