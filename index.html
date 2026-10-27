@@ -34,7 +34,7 @@
       
       <!-- FOTO UTAMA PADA COVER (Menggunakan .jpeg) -->
       <div class="cover-photo-wrap">
-        <img class="cover-photo" src="assets/images/cover-foto.jpeg" alt="Foto Tyo dan Pani">
+        <img class="cover-photo" src="assets/images/cover-foto.png" alt="Foto Tyo dan Pani">
         <span class="photo-sparkle sparkle-a" aria-hidden="true">✿</span>
         <span class="photo-sparkle sparkle-b" aria-hidden="true">✧</span>
       </div>
@@ -85,7 +85,7 @@
             <!-- FOTO MEMPELAI PRIA (.jpeg) -->
             <img src="assets/images/groom.png" alt="Foto Mempelai Pria" loading="lazy">
           </div>
-          <h3 data-groom>Tyo Faiz Asidiqi</h3>
+          <h3>Tyo Faiz Asidiqi</h3>
           <p class="person-role">Mempelai Pria</p>
           <p class="person-detail">Putra dari Bapak Irwanto<br>dan Ibu Sri Andriani</p>
         </article>
@@ -95,7 +95,7 @@
             <!-- FOTO MEMPELAI WANITA (.jpeg) -->
             <img src="assets/images/bride.png" alt="Foto Mempelai Wanita" loading="lazy">
           </div>
-          <h3 data-bride>Pani Putri Ardina Br Purba</h3>
+          <h3>Pani Putri Ardina Br Purba</h3>
           <p class="person-role">Mempelai Wanita</p>
           <p class="person-detail">Putri dari Bapak Adilta Purba<br>dan Ibu Lidia Wati</p>
         </article>
@@ -139,14 +139,14 @@
       <div class="event-card reveal">
         <div class="event-icon" aria-hidden="true">❀</div>
         <h3>Akad Nikah</h3>
-        <p class="event-date" data-date-label>Rabu, 28 Oktober 2026</p>
+        <p class="event-date">Rabu, 28 Oktober 2026</p>
         <p class="event-time">10.00 WIB – Selesai</p>
         <p class="event-place">Dusun Beringin<br>Desa Tanjung Putus, Kecamatan Padang Tualang</p>
       </div>
       <div class="event-card reveal">
         <div class="event-icon" aria-hidden="true">✿</div>
         <h3>Resepsi</h3>
-        <p class="event-date" data-date-label>Minggu, 15 November 2026</p>
+        <p class="event-date">Minggu, 15 November 2026</p>
         <p class="event-time">10.00 WIB – Selesai</p>
         <p class="event-place">Dusun Beringin<br>Desa Tanjung Putus</p>
       </div>
@@ -186,6 +186,39 @@
       <div id="formFeedback" class="form-feedback" aria-live="polite"></div>
       <div id="wishList" class="wish-list"></div>
     </section>
+    
+<!-- Amplop Digital -->
+<div class="digital-gift">
+  <h3>💌 Amplop Digital</h3>
+  <p>
+    Doa restu Anda merupakan hadiah terindah bagi kami.
+    Namun, jika ingin memberikan tanda kasih, Anda dapat
+    mengirimkannya melalui rekening berikut.
+  </p>
+
+  <div class="rekening-card">
+    <div class="rekening-bank">BANK BCA</div>
+
+    <p class="rekening-label">Nomor Rekening</p>
+    <div class="rekening-nomor" id="nomorRekening">
+      1234567890
+    </div>
+
+    <p class="rekening-label">Atas Nama</p>
+    <div class="rekening-nama" id="namaRekening">
+      Tyo Faiz Asidiqi
+    </div>
+
+    <button
+      type="button"
+      class="btn-salin-rekening"
+      onclick="salinRekening()"
+    >
+      Salin Nomor Rekening
+    </button>
+  </div>
+</div>
+
 
     <section class="closing-section section reveal">
       <div class="closing-stars" aria-hidden="true">✿　✧　✿</div>
@@ -199,7 +232,7 @@
 
     <footer class="footer">
       <p>Undangan Pernikahan Digital</p>
-      <p class="footer-small">Dibuat dengan cinta ✿</p>
+      <p class="footer-small">@ryu_zyein ✿</p>
     </footer>
   </div>
 
